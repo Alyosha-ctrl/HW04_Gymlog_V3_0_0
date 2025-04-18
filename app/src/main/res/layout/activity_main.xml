@@ -8,12 +8,97 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/logDisplayTextView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dip"
+        android:padding="8dp"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ExcerciseLabelTextView"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/excercise"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logDisplayTextView" />
+
+    <EditText
+        android:id="@+id/ExerciseInputEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_an_exercise"
+        android:inputType="textAutoComplete"
+        android:padding="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/ExcerciseLabelTextView"
+        app:layout_constraintStart_toEndOf="@id/ExcerciseLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/logDisplayTextView" />
+
+    <TextView
+        android:id="@+id/WeightLabelTextView"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/weight"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ExcerciseLabelTextView" />
+
+    <EditText
+        android:id="@+id/WeightInputEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_a_weight"
+        android:inputType="numberDecimal|number"
+        android:padding="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/WeightLabelTextView"
+        app:layout_constraintStart_toEndOf="@id/WeightLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/logDisplayTextView" />
+
+    <TextView
+        android:id="@+id/RepsLabelTextView"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/reps"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/WeightLabelTextView" />
+
+    <EditText
+        android:id="@+id/RepsInputEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_reps"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/RepsLabelTextView"
+        app:layout_constraintStart_toEndOf="@id/RepsLabelTextView" />
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/log"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RepsLabelTextView"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
