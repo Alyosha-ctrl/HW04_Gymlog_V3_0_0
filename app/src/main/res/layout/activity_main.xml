@@ -90,6 +90,7 @@
         app:layout_constraintStart_toEndOf="@id/RepsLabelTextView" />
 
     <Button
+        android:id="@+id/logButton"
         android:layout_width="400dp"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
@@ -97,8 +98,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RepsLabelTextView"
-        />
+        app:layout_constraintTop_toBottomOf="@id/RepsLabelTextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
