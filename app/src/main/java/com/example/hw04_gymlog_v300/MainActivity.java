@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * This takes in the information from the binding converts into variables that java can use,
+     * and then adds the stuff to the screen.
+     */
     private void updateDisplay(){
         getInformationFromDisplay();
         String currentInfo = binding.logDisplayTextView.getText().toString();
