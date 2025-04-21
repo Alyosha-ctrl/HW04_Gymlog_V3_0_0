@@ -8,7 +8,7 @@ import com.example.hw04_gymlog_v300.Database.GymLogDatabase;
 import java.time.LocalDate;
 import java.util.Objects;
 
-@Entity(tableName = GymLogDatabase.gymLogTable)
+@Entity(tableName = GymLogDatabase.GYM_LOG_TABLE)
 public class GymLog {
     @PrimaryKey(autoGenerate = true)
     private int id;
