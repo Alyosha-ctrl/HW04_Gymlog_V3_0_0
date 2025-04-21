@@ -16,5 +16,5 @@ public interface GymLogDAO {
     void insert(GymLog gymLog);
 
     @Query("Select * from " + GymLogDatabase.GYM_LOG_TABLE)
-    ArrayList<GymLog> getAllRecords()
+    List<GymLog> getAllRecords()
 ;}
