@@ -3,10 +3,12 @@ package com.example.hw04_gymlog_v300.Database.entities;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import com.example.hw04_gymlog_v300.Database.GymLogDatabase;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
-@Entity(tableName = "gymLog")
+@Entity(tableName = GymLogDatabase.gymLogTable)
 public class GymLog {
     @PrimaryKey(autoGenerate = true)
     private int id;
