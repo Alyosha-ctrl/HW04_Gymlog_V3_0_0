@@ -25,6 +25,15 @@ public class GymLog {
     }
 
     @Override
+    public String toString() {
+        return "Exercise='" + exercise + '\n' +
+                "Weight: " + weight + '\n'+
+                "Reps: " + reps + '\n'+
+                "Date: " + date.toString() + '\n'+
+                "=-=-=-=\n";
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         GymLog gymLog = (GymLog) o;
