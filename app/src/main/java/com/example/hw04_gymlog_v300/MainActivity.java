@@ -5,13 +5,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.example.hw04_gymlog_v300.databinding.ActivityMainBinding;
 
 import java.util.Locale;
@@ -22,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
-    String excercise = "";
+    String exercise = "";
     double weight = 0.0;
     int reps = 0;
 
@@ -46,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
     private void updateDisplay(){
         getInformationFromDisplay();
         String currentInfo = binding.logDisplayTextView.getText().toString();
-        String newDisplay = String.format(Locale.US, "Exercise:%s%nWeight:%.2f%nReps:%d%n=-=-=-=%n%s", excercise, weight, reps, currentInfo);
+        String newDisplay = String.format(Locale.US, "Exercise:%s%nWeight:%.2f%nReps:%d%n=-=-=-=%n%s", exercise, weight, reps, currentInfo);
         binding.logDisplayTextView.setText(newDisplay);
     }
 
     private void getInformationFromDisplay(){
-        excercise = binding.ExerciseInputEditText.getText().toString();
+        exercise = binding.ExerciseInputEditText.getText().toString();
         try {
             weight = Double.parseDouble(binding.WeightInputEditText.getText().toString());
         }
